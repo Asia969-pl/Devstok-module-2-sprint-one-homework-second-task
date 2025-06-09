@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>praca domowa 2</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div id="parameterArea">
+        <label for="searchInput"> Filtry</label>
+        <input id="searchInput" type="text" placeholder="Wyszukaj Nazwę">
+        <div id="statusValue">
+            <label><input class="radio" type="radio" name="status" value="Alive" checked> Zywy</label>
+            <label><input class="radio" type="radio" name="status" value="Dead"> Martwy</label>
+            <label><input class="radio" type="radio" name="status" value="unknown"> Nieznany</label>
+        </div>
+    </div>
+    <div id="characterContainer"></div>
+    <div id="navigation">
+        <button id="prevButton" >⬅️</button>
+        <button id="nextButton">➡️</button>
+    </div>
+    <div id="characterForm">
+        <h3>Stwórz postać</h3>
+        <div id="formContainer">
+        <input id="createName" type="text" placeholder="Nazwa postaci"></input>
+        <select  id ="createStatus" name="status">
+            <option value="Alive">Żywy</option>
+            <option value="Dead">Martwy</option>
+            <option value="unknown">Nieznany</option>
+          </select>
+          <input id="createSpecies" type="text" placeholder="rasa"></input>
+          <button id="sendingButton">Stwórz</button>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
